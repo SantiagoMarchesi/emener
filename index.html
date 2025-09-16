@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><!-- TODO: Nombre de la empresa --> EMENER SRL – Transformadores</title>
+  <meta name="description" content="<!-- TODO: Descripción corta del negocio -->" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- TODO (opcional): favicon -->
+  <!-- <link rel="icon" href="assets/logo.svg"> -->
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+  <img src="logo.png" alt="Emener Transformadores" class="brand-logo">
+</a>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto" class="btn btn-small">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Héroe -->
+  <section id="inicio" class="hero">
+  <!-- Imagen de fondo reemplazada -->
+  <div class="hero-bg" style="background-image:url('imagen4.jpg');" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1>FABRICACIÓN Y MANTENIMIENTO DE TRANSFORMADORES DE DISTRIBUCIÓN Y POTENCIA</h1>
+      <p class="lead">Entregamos transformadores con calidad y experiencia</p>
+      <div class="hero-cta">
+        <a href="#servicios" class="btn">Ver servicios</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section">
+  <div class="container grid-2">
+    <!-- Columna de texto -->
+    <div>
+      <h2>Elaborando excelencia durante más de 20 años</h2>
+      <p>
+        Con años de experiencia, <strong>EMENER SRL</strong> se encuentra a la vanguardia en la fabricación,
+        reparación y mantenimiento de transformadores. Nuestra misión es ofrecer productos de alta calidad que
+        cumplen con las normas ISO 9001 e IRAM, garantizando la confiabilidad y seguridad de nuestros clientes.
+      </p>
+      <p>
+        Nuestro equipo de expertos se dedica a brindar soluciones a medida, tanto para distribución como para
+        aplicaciones rurales. Priorizamos la satisfacción del cliente y empleamos tecnología avanzada y materiales
+        de primera calidad para fabricar transformadores de 25 kVA a 2500 kVA.
+      </p>
+      <p>
+        Confíe en <strong>EMENER SRL</strong> para sus necesidades de transformadores y experimente la diferencia
+        en calidad y servicio.
+      </p>
+    </div>
+
+    <!-- Columna de imagen -->
+    <div>
+      <img src="Imagen5.jpg" alt="Transformadores en planta" style="width:100%; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,.15);">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Servicios -->
+<section id="servicios" class="section">
+  <div class="container">
+    <div class="cards">
+      <div class="card">
+        <img src="imagen3.jpg" alt="Fabricación de transformadores" class="card-img">
+        <h3>Fabricación de transformadores</h3>
+        <p>Transformadores de distribución y potencia fabricados por expertos.</p>
+        <a href="#" class="card-link">Solicitar información</a>
+      </div>
+      <div class="card">
+        <img src="imagen2.jpg" alt="Reparación y mantenimiento de transformadores" class="card-img">
+        <h3>Reparación y mantenimiento de transformadores</h3>
+        <p>Reparación y mantenimiento confiables para un funcionamiento óptimo.</p>
+        <a href="#" class="card-link">Agendar servicio</a>
+      </div>
+      <div class="card">
+        <img src="imagen1.jpg" alt="Soluciones de transformadores personalizadas" class="card-img">
+        <h3>Soluciones de transformadores personalizadas</h3>
+        <p>Soluciones de transformadores adaptadas a requisitos eléctricos específicos.</p>
+        <a href="#" class="card-link">Hablar con un experto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contacto -->
+<section id="contacto" class="section" style="background-color:#0b0f16;">
+  <div class="container grid-2">
+    <!-- Columna izquierda: formulario (déjalo como lo tengas) -->
+    <div>
+      <h2>Contacto</h2>
+      <p>Cuéntanos tu necesidad y te responderemos a la brevedad.</p>
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nombre *</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="field">
+          <label for="phone">Teléfono</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <label class="checkbox">
+  <input type="checkbox" id="consent" required /> Acepto el uso de mis datos para responder a esta consulta *
+</label>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <!-- Columna derecha: Mapa + Datos -->
+    <aside class="contact-box">
+      <!-- MAPA ARRIBA DE LOS DATOS -->
+      <div class="map-embed" role="region" aria-label="Mapa de ubicación">
+        <iframe
+          title="Mapa Marino Gabbarini 180"
+          src="https://maps.google.com/maps?q=-31.3243115,-64.17279&z=19&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h3>Datos</h3>
+      <ul class="contact-list">
+        <li>
+          <strong>Dirección:</strong>
+          <!-- Al tocar la dirección, abre TU enlace exacto de Google Maps -->
+          <a href="https://www.google.com/maps/@-31.3243115,-64.17279,19.75z?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D"
+             target="_blank" rel="noopener">
+            Marino Gabbarini 180, X5019 Córdoba
+          </a>
+        </li>
+        <li><strong>Tel:</strong> <a href="tel:+5403510000000">+54 9 351 202-3749</a></li>
+        <li><strong>Email:</strong> <a href="mailto:ventas@emener.com.ar">ventas@emener.com.ar</a></li>
+      </ul>
+
+      <h4>Horarios</h4>
+<ul class="hours">
+  <li><span class="day">Lunes</span> <span class="time">8:00am – 4:00pm</span></li>
+  <li><span class="day">Martes</span> <span class="time">8:00am – 4:00pm</span></li>
+  <li><span class="day">Miércoles</span> <span class="time">8:00am – 4:00pm</span></li>
+  <li><span class="day">Jueves</span> <span class="time">8:00am – 4:00pm</span></li>
+  <li><span class="day">Viernes</span> <span class="time">8:00am – 4:00pm</span></li>
+</ul>
+
+
+      <!-- También este botón apunta al mismo mapa -->
+      <a class="btn btn-outline full"
+         href="https://www.google.com/maps/@-31.3243115,-64.17279,19.75z?entry=ttu&g_ep=EgoyMDI1MDkwOS4wIKXMDSoASAFQAw%3D%3D"
+         target="_blank" rel="noopener">
+        Cómo llegar
+      </a>
+    </aside>
+  </div>
+</section>
+
+
+
+  <!-- Pie -->
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <!-- Columna 1: Logo + texto -->
+    <div class="footer-brand">
+      <img src="logo.png" alt="Emener Transformadores" class="footer-logo">
+      <p>Fabricamos y mantenemos transformadores de distribución y potencia con más de 20 años de experiencia.</p>
+    </div>
+
+    <!-- Columna 2: Navegación -->
+    <div class="footer-nav">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <ul>
+        <li><strong>Dirección:</strong> Marino Gabbarini 180, Córdoba</li>
+        <li><strong>Tel:</strong> <a href="tel:+543510000000">+54 9 351 202-3749</a></li>
+        <li><strong>Email:</strong> <a href="mailto:ventas@emener.com.ar">ventas@emener.com.ar</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © <span id="year"></span> EMENER SRL · Todos los derechos reservados
+  </div>
+</footer>
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contactForm');
+    const note = document.getElementById('formNote');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+
+      note.textContent = 'Enviando...';
+      setTimeout(() => {
+        note.textContent = 'Gracias. Hemos recibido tu mensaje.';
+        form.reset();
+      }, 600);
+    });
+  </script>
+</body>
+</html>
